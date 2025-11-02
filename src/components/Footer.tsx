@@ -58,22 +58,34 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link to="/" className="text-muted-foreground hover:text-gold transition-smooth">
+                <Link
+                  to="/"
+                  className="text-muted-foreground hover:text-gold transition-smooth"
+                >
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="text-muted-foreground hover:text-gold transition-smooth">
+                <Link
+                  to="/about"
+                  className="text-muted-foreground hover:text-gold transition-smooth"
+                >
                   About
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="text-muted-foreground hover:text-gold transition-smooth">
+                <Link
+                  to="/services"
+                  className="text-muted-foreground hover:text-gold transition-smooth"
+                >
                   Services
                 </Link>
               </li>
               <li>
-                <Link to="/packages" className="text-muted-foreground hover:text-gold transition-smooth">
+                <Link
+                  to="/packages"
+                  className="text-muted-foreground hover:text-gold transition-smooth"
+                >
                   Packages
                 </Link>
               </li>
@@ -85,17 +97,26 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Resources</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link to="/case-studies" className="text-muted-foreground hover:text-gold transition-smooth">
+                <Link
+                  to="/case-studies"
+                  className="text-muted-foreground hover:text-gold transition-smooth"
+                >
                   Case Studies
                 </Link>
               </li>
               <li>
-                <Link to="/portfolio" className="text-muted-foreground hover:text-gold transition-smooth">
+                <Link
+                  to="/portfolio"
+                  className="text-muted-foreground hover:text-gold transition-smooth"
+                >
                   Portfolio
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-muted-foreground hover:text-gold transition-smooth">
+                <Link
+                  to="/contact"
+                  className="text-muted-foreground hover:text-gold transition-smooth"
+                >
                   Contact
                 </Link>
               </li>
@@ -115,7 +136,11 @@ const Footer = () => {
                 required
                 className="flex-1"
               />
-              <Button type="submit" size="sm" className="bg-gold hover:bg-gold-dark text-foreground">
+              <Button
+                type="submit"
+                size="sm"
+                className="bg-gold hover:bg-gold-dark text-foreground"
+              >
                 Subscribe
               </Button>
             </form>
@@ -127,12 +152,18 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
             <p>© 2025 Studio Elevate Marketing. All rights reserved.</p>
             <div className="flex gap-4">
-              <a href="mailto:info@studioelevate.co.ke" className="hover:text-gold transition-smooth">
+              <a
+                href="mailto:info@studioelevate.co.ke"
+                className="hover:text-gold transition-smooth"
+              >
                 info@studioelevate.co.ke
               </a>
               <span>|</span>
-              <a href="tel:+254700000000" className="hover:text-gold transition-smooth">
-                +254 700 000 000
+              <a
+                href="tel:+254115450287"
+                className="hover:text-gold transition-smooth"
+              >
+                +254 115 450 287
               </a>
             </div>
           </div>

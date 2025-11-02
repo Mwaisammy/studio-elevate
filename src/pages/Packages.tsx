@@ -2,6 +2,7 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Check, Star, ArrowRight } from "lucide-react";
+import PaymentTerms from "@/components/PaymentTerms";
 
 const Packages = () => {
   const adPackages = [
@@ -18,7 +19,8 @@ const Packages = () => {
         "Basic performance report",
         "Strategy recommendations",
       ],
-      ideal: "Perfect for testing the waters and seeing if paid ads work for your brand",
+      ideal:
+        "Perfect for testing the waters and seeing if paid ads work for your brand",
       cta: "Start Testing",
     },
     {
@@ -36,7 +38,8 @@ const Packages = () => {
         "Lead tracking & analysis",
         "Strategy consultation calls",
       ],
-      ideal: "For designers ready to consistently attract high-quality client inquiries",
+      ideal:
+        "For designers ready to consistently attract high-quality client inquiries",
       cta: "Get Started",
       popular: true,
     },
@@ -56,7 +59,8 @@ const Packages = () => {
         "Priority support",
         "Quarterly brand audits",
       ],
-      ideal: "For established brands seeking comprehensive marketing partnership",
+      ideal:
+        "For established brands seeking comprehensive marketing partnership",
       cta: "Let's Talk",
       premium: true,
     },
@@ -124,7 +128,8 @@ const Packages = () => {
             Investment <span className="text-gold">Packages</span>
           </h1>
           <p className="text-xl text-muted-foreground animate-fade-in">
-            Transparent pricing designed to deliver exceptional ROI for your interior design brand.
+            Transparent pricing designed to deliver exceptional ROI for your
+            interior design brand.
           </p>
         </div>
 
@@ -167,11 +172,19 @@ const Packages = () => {
                   </div>
                 )}
 
-                <h3 className="font-serif text-2xl font-bold mb-2">{pkg.name}</h3>
+                <h3 className="font-serif text-2xl font-bold mb-2">
+                  {pkg.name}
+                </h3>
                 <div className="mb-6">
-                  <p className="text-3xl font-bold text-gold mb-1">{pkg.price}</p>
-                  <p className="text-sm text-muted-foreground">+ {pkg.adSpend} ad spend</p>
-                  <p className="text-sm text-muted-foreground">{pkg.duration}</p>
+                  <p className="text-3xl font-bold text-gold mb-1">
+                    {pkg.price}
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    + {pkg.adSpend} ad spend
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    {pkg.duration}
+                  </p>
                 </div>
 
                 <ul className="space-y-3 mb-8">
@@ -184,7 +197,9 @@ const Packages = () => {
                 </ul>
 
                 <div className="bg-secondary p-4 rounded-lg mb-6">
-                  <p className="text-sm text-muted-foreground italic">{pkg.ideal}</p>
+                  <p className="text-sm text-muted-foreground italic">
+                    {pkg.ideal}
+                  </p>
                 </div>
 
                 <Button
@@ -244,10 +259,16 @@ const Packages = () => {
                   </div>
                 )}
 
-                <h3 className="font-serif text-2xl font-bold mb-2">{pkg.name}</h3>
+                <h3 className="font-serif text-2xl font-bold mb-2">
+                  {pkg.name}
+                </h3>
                 <div className="mb-6">
-                  <p className="text-2xl font-bold text-gold mb-1">{pkg.price}</p>
-                  <p className="text-sm text-muted-foreground">One-time investment</p>
+                  <p className="text-2xl font-bold text-gold mb-1">
+                    {pkg.price}
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    One-time investment
+                  </p>
                 </div>
 
                 <ul className="space-y-3 mb-8">
@@ -260,7 +281,9 @@ const Packages = () => {
                 </ul>
 
                 <div className="bg-secondary p-4 rounded-lg mb-6">
-                  <p className="text-sm text-muted-foreground italic">{pkg.ideal}</p>
+                  <p className="text-sm text-muted-foreground italic">
+                    {pkg.ideal}
+                  </p>
                 </div>
 
                 <Button
@@ -291,31 +314,43 @@ const Packages = () => {
               <div>
                 <h3 className="font-semibold mb-2">How do ad budgets work?</h3>
                 <p className="text-muted-foreground">
-                  Our service fee covers strategy, creation, and management. Your ad budget goes
-                  directly to platforms like Facebook, Instagram, and Google to reach your target
-                  audience.
+                  Our service fee covers strategy, creation, and management.
+                  Your ad budget goes directly to platforms like Facebook,
+                  Instagram, and Google to reach your target audience.
                 </p>
               </div>
               <div>
-                <h3 className="font-semibold mb-2">What results can I expect?</h3>
+                <h3 className="font-semibold mb-2">
+                  What results can I expect?
+                </h3>
                 <p className="text-muted-foreground">
-                  On average, our clients see 3-5x return on their ad spend within the first 3
-                  months. Results vary based on budget, market, and service pricing.
+                  On average, our clients see 3-5x return on their ad spend
+                  within the first 3 months. Results vary based on budget,
+                  market, and service pricing.
                 </p>
               </div>
               <div>
-                <h3 className="font-semibold mb-2">Can I customize a package?</h3>
+                <h3 className="font-semibold mb-2">
+                  Can I customize a package?
+                </h3>
                 <p className="text-muted-foreground">
-                  Absolutely! We can tailor any package to fit your specific needs and budget.
-                  Contact us for a custom proposal.
+                  Absolutely! We can tailor any package to fit your specific
+                  needs and budget. Contact us for a custom proposal.
                 </p>
               </div>
               <div>
-                <h3 className="font-semibold mb-2">What's the contract length?</h3>
+                <h3 className="font-semibold mb-2">
+                  What's the contract length?
+                </h3>
                 <p className="text-muted-foreground">
-                  Monthly packages are month-to-month with no long-term commitment. We recommend at
-                  least 3 months to see optimal results.
+                  Monthly packages are month-to-month with no long-term
+                  commitment. We recommend at least 3 months to see optimal
+                  results.
                 </p>
+              </div>
+
+              <div>
+                <PaymentTerms />
               </div>
             </div>
           </Card>
