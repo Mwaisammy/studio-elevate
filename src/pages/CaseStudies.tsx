@@ -9,7 +9,7 @@ const CaseStudies = () => {
       client: "Luxe Interiors",
       industry: "High-End Residential Design",
       challenge:
-        "Interior design brands often struggle to consistently attract clients who truly value their craft. The challenge lies in building an online presence that reflects the quality of their work.",
+        "realtors brands often struggle to consistently attract clients who truly value their craft. The challenge lies in building an online presence that reflects the quality of their work.",
       solution:
         "We focus on positioning designers as premium brands through strategic marketing, clean web design, and storytelling that connects emotionally with their audience.",
       vision:
@@ -17,7 +17,7 @@ const CaseStudies = () => {
     },
     {
       client: "Elegant Spaces Studio",
-      industry: "Boutique Interior Design",
+      industry: "Boutique realtors",
       challenge:
         "Many talented designers rely mainly on word-of-mouth and social media boosts, limiting how far their work can reach.",
       solution:
@@ -27,7 +27,7 @@ const CaseStudies = () => {
     },
     {
       client: "Urban Aesthetics",
-      industry: "Modern Interior Design",
+      industry: "Modern realtors",
       challenge:
         "Emerging design brands often find it difficult to communicate their value clearly online, especially when targeting the luxury market.",
       solution:
@@ -45,14 +45,14 @@ const CaseStudies = () => {
           <h1 className="font-serif text-5xl md:text-6xl font-bold mb-6 animate-fade-in-up">
             Vision <span className="text-gold">Stories</span>
           </h1>
-          <p className="text-xl text-muted-foreground animate-fade-in">
-            A look at the kind of growth we aim to achieve for interior design
-            brands through creativity, technology, and strategy.
-          </p>
+          {/* <p className="text-xl text-muted-foreground animate-fade-in">
+            A look at the kind of growth we aim to achieve for realtors brands
+            through creativity, technology, and strategy.
+          </p> */}
         </div>
 
         {/* Case Studies */}
-        <div className="space-y-20 max-w-6xl mx-auto">
+        {/* <div className="space-y-20 max-w-6xl mx-auto">
           {caseStudies.map((study, index) => (
             <Card
               key={index}
@@ -103,7 +103,7 @@ const CaseStudies = () => {
               </div>
             </Card>
           ))}
-        </div>
+        </div> */}
 
         {/* CTA */}
         <Card className="p-12 text-center bg-gradient-to-br from-gold/10 to-transparent border-gold/20 max-w-4xl mx-auto mt-32">

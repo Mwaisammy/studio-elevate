@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowRight, Target, TrendingUp, Award, Star } from "lucide-react";
-import heroImage from "@/assets/hero-image.jpg";
+import heroImage from "@/assets/town-house.jpg";
 
 const Home = () => {
   const testimonials = [
@@ -43,9 +43,8 @@ const Home = () => {
 
         <div className="container mx-auto px-4 z-10 text-center flex flex-col gap-10 text-white">
           <h1 className="text-4xl md:text-5xl font-semibold mb-4">
-            Growth Partners for Realtors <br />
-            and
-            <span className="text-gold"> Interior Designers</span>
+            Growth Partners for <br />
+            <span className="text-gold"> Realtors</span>
           </h1>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
@@ -117,7 +116,7 @@ const Home = () => {
           <div className="text-center mb-16 min-h-[90vh] flex flex-col justify-center items-center">
             <h2 className="font-serif text-4xl md:text-5xl font-bold mb-4">
               Measurable Growth for{" "}
-              <span className="text-gold">Design & Realty Brands</span>
+              <span className="text-gold">Realty Brands</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Every strategy we create is designed to move the needle for more
@@ -167,7 +166,7 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="font-serif text-4xl md:text-5xl font-bold mb-4">
-              Realtors & Designers Who Trust{" "}
+              Realtors Who Trust{" "}
               <span className="text-gold">Studio Elevate</span>
             </h2>
           </div>
@@ -206,9 +205,8 @@ const Home = () => {
               Let’s Scale Your Brand Together
             </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Whether you design spaces or sell them — we help you scale your
-              brand with structure, strategy, and systems built for long-term
-              growth.
+              While you sell homes — we help you scale your brand with
+              structure, strategy, and systems built for long-term growth.
             </p>
             <Button
               asChild

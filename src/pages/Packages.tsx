@@ -25,7 +25,7 @@ const Packages = () => {
     },
     {
       name: "Growth Plan",
-      price: "Ksh 35,000/month",
+      price: "Ksh 45,000/month",
       adSpend: "Ksh 20,000 - 50,000",
       duration: "Monthly",
       features: [
@@ -131,11 +131,9 @@ const Packages = () => {
           </h1>
           <p className="text-xl text-muted-foreground animate-fade-in">
             Transparent, value-driven investments designed to help{" "}
-            <span className="font-semibold">
-              realtors and interior designers
-            </span>{" "}
-            scale sustainably — through strategic positioning, digital systems,
-            and client acquisition strategies that drive long-term growth.
+            <span className="font-semibold">realtors</span> scale sustainably —
+            through strategic positioning, digital systems, and client
+            acquisition strategies that drive long-term growth.
           </p>
         </div>
 
@@ -166,7 +164,7 @@ const Packages = () => {
                   <div className="absolute -top-4 left-1/2 -translate-x-1/2">
                     <span className="bg-gold text-foreground px-4 py-1 rounded-full text-sm font-semibold flex items-center gap-1">
                       <Star size={14} className="fill-current" />
-                      Most Popular
+                      Customized
                     </span>
                   </div>
                 )}
@@ -255,7 +253,7 @@ const Packages = () => {
                   <div className="absolute -top-4 left-1/2 -translate-x-1/2">
                     <span className="bg-gold text-foreground px-4 py-1 rounded-full text-sm font-semibold flex items-center gap-1">
                       <Star size={14} className="fill-current" />
-                      Most Popular
+                      Customized
                     </span>
                   </div>
                 )}

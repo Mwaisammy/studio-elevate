@@ -39,9 +39,10 @@ All colors MUST be HSL.
     --radius: 0.5rem;
 
     /* Custom luxury tokens */
-    --gold: 22 58% 55%;
-    --gold-light:  22 58% 59%;
-    --gold-dark:  22 58% 59%;
+    --gold: 119, 19%, 42%;       /* main grass green */
+--gold-light: 120 50% 55%; /* lighter grass green */
+--gold-dark: 150, 20%, 25%;  /* darker grass green */
+
     --black: 0 0% 5%;
     --off-white: 0 0% 98%;
     
