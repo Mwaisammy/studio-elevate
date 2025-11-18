@@ -67,7 +67,7 @@ const Contact = () => {
                   name="fullName"
                   type="text"
                   required
-                  placeholder="Sarah Mitchell"
+                  placeholder="Sarah Kamau"
                   className="mt-1"
                 />
               </div>

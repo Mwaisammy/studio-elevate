@@ -7,139 +7,115 @@ import { toast } from "sonner";
 const Footer = () => {
   const handleNewsletterSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    toast.success("Thank you for subscribing!");
+    toast.success("🎉 Thank you for subscribing!");
   };
 
+  const footerLinks = [
+    {
+      title: "Quick Links",
+      links: [
+        { label: "Home", to: "/" },
+        { label: "About", to: "/about" },
+        { label: "Services", to: "/services" },
+        { label: "Packages", to: "/packages" },
+      ],
+    },
+    {
+      title: "Resources",
+      links: [
+        { label: "Case Studies", to: "/case-studies" },
+        { label: "Portfolio", to: "/portfolio" },
+        { label: "Contact", to: "/contact" },
+      ],
+    },
+  ];
+
   return (
-    <footer className="bg-secondary border-t border-border">
+    <footer className="bg-secondary border-t border-border text-sm text-muted-foreground">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
           {/* Brand */}
-          <div className="md:col-span-1">
-            <h3 className="font-serif text-2xl font-bold text-gold mb-4">
+          <div>
+            <h3 className="font-serif text-2xl font-bold text-gold mb-3">
               Studio Elevate
             </h3>
-            <p className="text-sm text-muted-foreground mb-4">
-              Luxury marketing for luxury design brands.
+            <p className="leading-relaxed mb-4">
+              Elevating luxury interior brands through marketing that converts.
             </p>
+
             <div className="flex gap-4">
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-foreground hover:text-gold transition-smooth"
-                aria-label="Instagram"
-              >
-                <Instagram size={20} />
-              </a>
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-foreground hover:text-gold transition-smooth"
-                aria-label="LinkedIn"
-              >
-                <Linkedin size={20} />
-              </a>
-              <a
-                href="https://youtube.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-foreground hover:text-gold transition-smooth"
-                aria-label="YouTube"
-              >
-                <Youtube size={20} />
-              </a>
+              {[
+                {
+                  Icon: Instagram,
+                  href: "https://instagram.com",
+                  label: "Instagram",
+                },
+                {
+                  Icon: Linkedin,
+                  href: "https://linkedin.com",
+                  label: "LinkedIn",
+                },
+                {
+                  Icon: Youtube,
+                  href: "https://youtube.com",
+                  label: "YouTube",
+                },
+              ].map(({ Icon, href, label }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                  className="text-foreground hover:text-gold transition-colors duration-300"
+                >
+                  <Icon size={20} />
+                </a>
+              ))}
             </div>
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h4 className="font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link
-                  to="/"
-                  className="text-muted-foreground hover:text-gold transition-smooth"
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/about"
-                  className="text-muted-foreground hover:text-gold transition-smooth"
-                >
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/services"
-                  className="text-muted-foreground hover:text-gold transition-smooth"
-                >
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/packages"
-                  className="text-muted-foreground hover:text-gold transition-smooth"
-                >
-                  Packages
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Resources */}
-          <div>
-            <h4 className="font-semibold mb-4">Resources</h4>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link
-                  to="/case-studies"
-                  className="text-muted-foreground hover:text-gold transition-smooth"
-                >
-                  Case Studies
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/portfolio"
-                  className="text-muted-foreground hover:text-gold transition-smooth"
-                >
-                  Portfolio
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/contact"
-                  className="text-muted-foreground hover:text-gold transition-smooth"
-                >
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </div>
+          {/* Navigation Sections */}
+          {footerLinks.map((section) => (
+            <div key={section.title}>
+              <h4 className="font-semibold mb-4 text-foreground">
+                {section.title}
+              </h4>
+              <ul className="space-y-2">
+                {section.links.map(({ label, to }) => (
+                  <li key={label}>
+                    <Link
+                      to={to}
+                      className="hover:text-gold transition-colors duration-300"
+                    >
+                      {label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
 
           {/* Newsletter */}
           <div>
-            <h4 className="font-semibold mb-4">Newsletter</h4>
-            <p className="text-sm text-muted-foreground mb-4">
-              Get interior design marketing tips delivered to your inbox.
+            <h4 className="font-semibold mb-4 text-foreground">Newsletter</h4>
+            <p className="mb-4 leading-relaxed">
+              Get luxury marketing tips and insights delivered monthly.
             </p>
-            <form onSubmit={handleNewsletterSubmit} className="flex gap-2">
+            <form
+              onSubmit={handleNewsletterSubmit}
+              className="flex flex-col sm:flex-row gap-3"
+            >
               <Input
                 type="email"
-                placeholder="Your email"
+                placeholder="Enter your email"
                 required
                 className="flex-1"
               />
               <Button
                 type="submit"
                 size="sm"
-                className="bg-gold hover:bg-gold-dark text-foreground"
+                className="bg-gold hover:bg-gold-dark text-foreground font-medium"
               >
                 Subscribe
               </Button>
@@ -147,21 +123,21 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="pt-8 border-t border-border">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-            <p>© 2025 Studio Elevate Marketing. All rights reserved.</p>
-            <div className="flex gap-4">
+        {/* Divider */}
+        <div className="border-t border-border pt-6">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-3">
+            <p>© {new Date().getFullYear()} Studio Elevate Marketing.</p>
+            <div className="flex items-center gap-3">
               <a
                 href="mailto:info@studioelevate.co.ke"
-                className="hover:text-gold transition-smooth"
+                className="hover:text-gold transition-colors"
               >
                 info@studioelevate.co.ke
               </a>
-              <span>|</span>
+              <span className="text-border">|</span>
               <a
                 href="tel:+254115450287"
-                className="hover:text-gold transition-smooth"
+                className="hover:text-gold transition-colors"
               >
                 +254 115 450 287
               </a>

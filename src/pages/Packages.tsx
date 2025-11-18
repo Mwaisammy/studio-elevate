@@ -17,10 +17,10 @@ const Packages = () => {
         "Professional ad creatives",
         "7-day test campaign",
         "Basic performance report",
-        "Strategy recommendations",
+        "Strategic recommendations",
       ],
       ideal:
-        "Perfect for testing the waters and seeing if paid ads work for your brand",
+        "Ideal for realtors or designers who want to validate if paid advertising can attract qualified, high-end clients.",
       cta: "Start Testing",
     },
     {
@@ -31,16 +31,16 @@ const Packages = () => {
       features: [
         "Full campaign management",
         "Advanced targeting strategies",
-        "Multiple ad variations",
-        "A/B testing & optimization",
+        "Multiple ad variations & testing",
+        "A/B optimization",
         "Weekly performance monitoring",
         "Monthly detailed reports",
-        "Lead tracking & analysis",
-        "Strategy consultation calls",
+        "Lead tracking & conversion analysis",
+        "Strategic growth consultation calls",
       ],
       ideal:
-        "For designers ready to consistently attract high-quality client inquiries",
-      cta: "Get Started",
+        "Perfect for designers and property sellers ready to consistently attract high-value clients and grow brand authority.",
+      cta: "Partner With Us",
       popular: true,
     },
     {
@@ -52,16 +52,16 @@ const Packages = () => {
         "Everything in Growth Plan",
         "Dedicated creative direction",
         "Custom landing page design",
-        "Retargeting campaigns",
+        "Advanced retargeting systems",
         "Email marketing integration",
         "Social media content strategy",
         "Bi-weekly strategy calls",
         "Priority support",
-        "Quarterly brand audits",
+        "Quarterly brand performance audits",
       ],
       ideal:
-        "For established brands seeking comprehensive marketing partnership",
-      cta: "Let's Talk",
+        "Built for established interior design studios and premium real estate brands looking for a long-term strategic partner to drive growth and brand equity.",
+      cta: "Let's Talk Growth",
       premium: true,
     },
   ];
@@ -71,50 +71,52 @@ const Packages = () => {
       name: "Starter Website",
       price: "Ksh 30,000 - 50,000",
       features: [
-        "5-7 page website",
+        "5–7 page website",
         "Mobile responsive design",
         "Basic SEO setup",
-        "Portfolio gallery (up to 10 projects)",
-        "Contact form",
-        "Social media links",
-        "1 month support",
+        "Portfolio or property gallery (up to 10 items)",
+        "Contact form & social links",
+        "1 month of support",
       ],
-      ideal: "For upcoming designers or studios just starting out",
+      ideal:
+        "Ideal for upcoming designers or property sellers establishing their first online presence and credibility.",
     },
     {
       name: "Professional Website",
       price: "Ksh 60,000 - 90,000",
       features: [
-        "8-12 page website",
-        "Custom luxury design",
+        "8–12 page custom design",
+        "Luxury-inspired layout",
         "Advanced SEO optimization",
-        "Portfolio gallery (up to 30 projects)",
-        "Blog section",
+        "Gallery or listings (up to 30 items)",
+        "Blog or insights section",
         "Newsletter integration",
-        "Google Analytics",
-        "3 months support",
+        "Google Analytics setup",
+        "3 months of support",
         "Content writing assistance",
       ],
-      ideal: "For mid-range brands looking to establish strong online presence",
+      ideal:
+        "For growth-focused brands or realtors ready to attract premium clients and position themselves as market leaders.",
       popular: true,
     },
     {
       name: "Luxury Website",
       price: "Ksh 120,000 - 180,000",
       features: [
-        "15+ page custom website",
-        "Premium bespoke design",
+        "15+ page custom experience",
+        "Bespoke design with cinematic visuals",
         "Comprehensive SEO strategy",
-        "Unlimited project galleries",
-        "Client portal integration",
-        "Advanced animations",
-        "E-commerce capabilities",
-        "Custom CMS",
+        "Unlimited project or property galleries",
+        "Client or buyer portal integration",
+        "High-end animations & interactions",
+        "E-commerce or inquiry system",
+        "Custom CMS backend",
         "6 months priority support",
         "Professional copywriting",
-        "Brand consultation",
+        "Brand consultation & positioning session",
       ],
-      ideal: "For premium interior designers demanding excellence",
+      ideal:
+        "For luxury interior design brands or real estate agencies that demand a world-class digital experience built to convert and inspire trust.",
       premium: true,
     },
   ];
@@ -122,25 +124,29 @@ const Packages = () => {
   return (
     <div className="min-h-screen py-20">
       <div className="container mx-auto px-4">
-        {/* Hero */}
+        {/* Hero Section */}
         <div className="max-w-4xl mx-auto text-center mb-20">
           <h1 className="font-serif text-5xl md:text-6xl font-bold mb-6 animate-fade-in-up">
             Investment <span className="text-gold">Packages</span>
           </h1>
           <p className="text-xl text-muted-foreground animate-fade-in">
-            Transparent pricing designed to deliver exceptional ROI for your
-            interior design brand.
+            Transparent, value-driven investments designed to help{" "}
+            <span className="font-semibold">
+              realtors and interior designers
+            </span>{" "}
+            scale sustainably — through strategic positioning, digital systems,
+            and client acquisition strategies that drive long-term growth.
           </p>
         </div>
 
-        {/* Ad Campaign Packages */}
+        {/* Advertising Packages */}
         <section className="mb-32">
           <div className="text-center mb-12">
             <h2 className="font-serif text-4xl font-bold mb-4">
-              Advertising <span className="text-gold">Campaign Packages</span>
+              Advertising <span className="text-gold">Partnership Plans</span>
             </h2>
             <p className="text-muted-foreground">
-              Service fee + ad spend (budget goes directly to platforms)
+              Service fee + ad spend (your ad budget goes directly to platforms)
             </p>
           </div>
 
@@ -224,10 +230,12 @@ const Packages = () => {
         <section className="mb-20">
           <div className="text-center mb-12">
             <h2 className="font-serif text-4xl font-bold mb-4">
-              Website Design <span className="text-gold">Packages</span>
+              Website Design <span className="text-gold">Partnerships</span>
             </h2>
             <p className="text-muted-foreground">
-              One-time investment for a stunning online presence
+              One-time investments designed to position your brand digitally —
+              attract ideal clients, build authority, and elevate your online
+              experience.
             </p>
           </div>
 
@@ -304,48 +312,52 @@ const Packages = () => {
           </div>
         </section>
 
-        {/* FAQ or Additional Info */}
+        {/* FAQ Section */}
         <section>
           <Card className="p-12 bg-secondary max-w-4xl mx-auto">
             <h2 className="font-serif text-3xl font-bold mb-8 text-center">
-              Investment <span className="text-gold">FAQs</span>
+              Partnership <span className="text-gold">FAQs</span>
             </h2>
             <div className="space-y-6">
               <div>
-                <h3 className="font-semibold mb-2">How do ad budgets work?</h3>
+                <h3 className="font-semibold mb-2">
+                  How does the ad spend work?
+                </h3>
                 <p className="text-muted-foreground">
                   Our service fee covers strategy, creation, and management.
-                  Your ad budget goes directly to platforms like Facebook,
-                  Instagram, and Google to reach your target audience.
+                  Your ad spend goes directly to platforms like Meta or Google
+                  to reach verified, high-intent audiences interested in
+                  property and luxury interiors.
                 </p>
               </div>
               <div>
                 <h3 className="font-semibold mb-2">
-                  What results can I expect?
+                  What kind of results can I expect?
                 </h3>
                 <p className="text-muted-foreground">
-                  On average, our clients see 3-5x return on their ad spend
-                  within the first 3 months. Results vary based on budget,
-                  market, and service pricing.
+                  Most partners experience 3–5x returns on ad spend within 3
+                  months, depending on offer quality, brand maturity, and market
+                  demand.
                 </p>
               </div>
               <div>
                 <h3 className="font-semibold mb-2">
-                  Can I customize a package?
+                  Can I customize my package?
                 </h3>
                 <p className="text-muted-foreground">
-                  Absolutely! We can tailor any package to fit your specific
-                  needs and budget. Contact us for a custom proposal.
+                  Absolutely. Whether you're building brand visibility or
+                  scaling sales, we tailor each plan around your specific goals
+                  and audience insights.
                 </p>
               </div>
               <div>
                 <h3 className="font-semibold mb-2">
-                  What's the contract length?
+                  What's the commitment period?
                 </h3>
                 <p className="text-muted-foreground">
-                  Monthly packages are month-to-month with no long-term
-                  commitment. We recommend at least 3 months to see optimal
-                  results.
+                  Monthly partnerships are flexible — no long-term lock-ins.
+                  However, we recommend at least 3 months to refine systems and
+                  deliver consistent ROI.
                 </p>
               </div>
 
