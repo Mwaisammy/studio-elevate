@@ -8,11 +8,13 @@ const Packages = () => {
   const adPackages = [
     {
       name: "Starter Test Campaign",
-      price: "Ksh 15,000",
+      price: "Ksh 20,000",
       adSpend: "Ksh 10,000",
       duration: "One-time",
       features: [
         "One campaign setup",
+        "Luxury buyer persona mapping",
+        "Competitor ad review",
         "Audience research & targeting",
         "Professional ad creatives",
         "7-day test campaign",
@@ -20,37 +22,39 @@ const Packages = () => {
         "Strategic recommendations",
       ],
       ideal:
-        "Ideal for realtors or designers who want to validate if paid advertising can attract qualified, high-end clients.",
+        "Perfect for realtors validating if paid advertising can attract verified, high-intent luxury buyers and sellers.",
       cta: "Start Testing",
     },
     {
       name: "Growth Plan",
-      price: "Ksh 45,000/month",
+      price: "Ksh 65,000/month",
       adSpend: "Ksh 20,000 - 50,000",
       duration: "Monthly",
       features: [
         "Full campaign management",
         "Advanced targeting strategies",
+        "High-net-worth audience segmentation",
         "Multiple ad variations & testing",
         "A/B optimization",
         "Weekly performance monitoring",
         "Monthly detailed reports",
-        "Lead tracking & conversion analysis",
+        "Lead tracking & agent handoff system",
         "Strategic growth consultation calls",
       ],
       ideal:
-        "Perfect for designers and property sellers ready to consistently attract high-value clients and grow brand authority.",
+        "Ideal for property developers and realtors ready to attract premium clients consistently and grow market authority.",
       cta: "Partner With Us",
       popular: true,
     },
     {
       name: "Luxury Brand Retainer",
-      price: "Ksh 80,000/month",
+      price: "Ksh 120,000/month",
       adSpend: "Custom budget",
       duration: "Monthly",
       features: [
         "Everything in Growth Plan",
         "Dedicated creative direction",
+        "Property launch campaign systems",
         "Custom landing page design",
         "Advanced retargeting systems",
         "Email marketing integration",
@@ -60,7 +64,7 @@ const Packages = () => {
         "Quarterly brand performance audits",
       ],
       ideal:
-        "Built for established interior design studios and premium real estate brands looking for a long-term strategic partner to drive growth and brand equity.",
+        "Built for established luxury real estate brands seeking long-term, end-to-end marketing systems and premium buyer acquisition.",
       cta: "Let's Talk Growth",
       premium: true,
     },
@@ -69,26 +73,25 @@ const Packages = () => {
   const websitePackages = [
     {
       name: "Starter Website",
-      price: "Ksh 30,000 - 50,000",
+      price: "Ksh 40,000 - 60,000",
       features: [
         "5–7 page website",
         "Mobile responsive design",
         "Basic SEO setup",
-        "Portfolio or property gallery (up to 10 items)",
+        "Property/portfolio gallery (up to 10 items)",
         "Contact form & social links",
         "1 month of support",
       ],
       ideal:
-        "Ideal for upcoming designers or property sellers establishing their first online presence and credibility.",
+        "Ideal for agents building their first online presence and credibility.",
     },
     {
       name: "Professional Website",
-      price: "Ksh 60,000 - 90,000",
+      price: "Ksh 75,000 - 110,000",
       features: [
-        "8–12 page custom design",
-        "Luxury-inspired layout",
+        "8–12 page custom luxury layout",
         "Advanced SEO optimization",
-        "Gallery or listings (up to 30 items)",
+        "Listings or gallery (up to 30 items)",
         "Blog or insights section",
         "Newsletter integration",
         "Google Analytics setup",
@@ -96,18 +99,18 @@ const Packages = () => {
         "Content writing assistance",
       ],
       ideal:
-        "For growth-focused brands or realtors ready to attract premium clients and position themselves as market leaders.",
+        "Built for growing realtors seeking a premium look that attracts high-value clients.",
       popular: true,
     },
     {
       name: "Luxury Website",
-      price: "Ksh 120,000 - 180,000",
+      price: "Ksh 150,000 - 220,000",
       features: [
         "15+ page custom experience",
-        "Bespoke design with cinematic visuals",
+        "Cinematic visuals & animations",
         "Comprehensive SEO strategy",
-        "Unlimited project or property galleries",
-        "Client or buyer portal integration",
+        "Unlimited listings or galleries",
+        "Client/buyer portal integration",
         "High-end animations & interactions",
         "E-commerce or inquiry system",
         "Custom CMS backend",
@@ -116,7 +119,7 @@ const Packages = () => {
         "Brand consultation & positioning session",
       ],
       ideal:
-        "For luxury interior design brands or real estate agencies that demand a world-class digital experience built to convert and inspire trust.",
+        "For luxury real estate brands demanding a world-class digital presence built to convert premium buyers.",
       premium: true,
     },
   ];
